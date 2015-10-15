@@ -33,10 +33,37 @@ Example Session
 """
 from datetime import datetime
 from calendar import month_name
-
-
-
-
-
 todaymonth = datetime.today().month
 todaydate = datetime.today().day
+numbermonth = month_name[todaymonth]
+
+name = input("Hello, what is your name? ")
+month = input("Hi {0}, what was the name of the month you were born in? ".format(name))
+year = int(input("And what year were you born in, {0}? ".format(name)))
+day = int(input("And the day? "))
+
+if month == "October" and day == 31:
+    print("You were born on Halloween!")
+ 
+if month == numbermonth and day == todaydate:
+    print("Happy birthday!")
+
+if year < 1980:
+    youryear = "stone age"
+elif year >= 1980 and year < 1990:
+    youryear = "eighties"
+elif year >= 1990 and year < 2000:
+    youryear = "nineties"
+else:
+    youryear = "two thousands"
+    
+if month == "December" or month == "February" or month == "January":
+    yourmonth = "winter"
+elif month == "March" or month == "April" or month == "May":
+    yourmonth = "spring"
+elif month == "June" or month == "July" or month == "August":
+    yourmonth = "summer"
+else:
+    yourmonth = "fall"
+
+print("{0}, you are a {1} baby of the {2}.".format(name, yourmonth, youryear))
