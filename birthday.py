@@ -43,7 +43,7 @@ year = int(input("And what year were you born in, {0}? ".format(name)))
 day = int(input("And the day? "))
 
 if year < 1980:
-    youryear = "Stone age"
+    youryear = "Stone Age"
 elif year >= 1980 and year < 1990:
     youryear = "eighties"
 elif year >= 1990 and year < 2000:
