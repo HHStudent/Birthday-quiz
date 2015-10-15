@@ -42,12 +42,6 @@ month = input("Hi {0}, what was the name of the month you were born in? ".format
 year = int(input("And what year were you born in, {0}? ".format(name)))
 day = int(input("And the day? "))
 
-if month == "October" and day == 31:
-    print("You were born on Halloween!")
- 
-if month == numbermonth and day == todaydate:
-    print("Happy birthday!")
-
 if year < 1980:
     youryear = "Stone age"
 elif year >= 1980 and year < 1990:
@@ -66,4 +60,11 @@ elif month == "June" or month == "July" or month == "August":
 else:
     yourmonth = "fall"
 
-print("{0}, you are a {1} baby of the {2}.".format(name, yourmonth, youryear))
+if month == "October" and day == 31:
+    print("You were born on Halloween!")
+elif month == numbermonth and day == todaydate:
+    print("Happy birthday!")
+else:
+    print("{0}, you are a {1} baby of the {2}.".format(name, yourmonth, youryear))
+
+
