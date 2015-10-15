@@ -49,7 +49,7 @@ if month == numbermonth and day == todaydate:
     print("Happy birthday!")
 
 if year < 1980:
-    youryear = "stone age"
+    youryear = "Stone age"
 elif year >= 1980 and year < 1990:
     youryear = "eighties"
 elif year >= 1990 and year < 2000:
